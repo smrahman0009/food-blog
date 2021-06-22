@@ -122,17 +122,26 @@ section{
 .about .row .col-150{
     width: 48%;
 }
+/* ----------------------__ABOUT__US__----------- */
 
-.title-text{
+.title h2{
     color: #111;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 300;
 }
 
-.title-text span{
+.title span{
     color: rgb(209, 25, 56);
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
+}
+
+.about-p{
+    font-size: 1.2em !important;
+}
+
+.title p{
+    font-size: 1.6em;
 }
 
 .row .col-150 .img-box{
@@ -151,6 +160,9 @@ section{
     object-fit: cover;
 }
 
+/* -----------------------------__END__ABOUT__US__-------------- */
+
+
 .menu .title{
     display: flex;
     flex-wrap: wrap;
@@ -160,20 +172,9 @@ section{
     text-align: center;
 }
 
-.menu .title span{
-    color: rgb(209, 25, 56);
-    font-weight: 700;
-    font-size: 2em;
-}
-
-.menu .title h2{
-    color: #111;
-    font-size: 1.5em;
-    font-weight: 300;
-}
 
 .menu .title {
-    margin: 20px 0px;
+    margin: 50px 0px;
 }
 
 .menu .content{
@@ -214,22 +215,11 @@ section{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 50px 0px;
 }
 
-.kitchen .title h2{
-    font-size: 2em;
-}
-.kitchen .title span{
-    color: #D23B3A;
-    font-size: 2.5em;
-}
-
-.kitchen .title p{
-    font-size: 1.3em;
-}
 
 .kitchen .content-box{
-    margin: 50px 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -267,19 +257,12 @@ section{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px 0px;
     color: white;
 }
 
 .testimonials .title h2{
-    font-size: 2em;
-}
-.testimonials .title p{
-    font-size: 1.3em;
-}
-.testimonials .title span{
-    color: #D23B3A;
-    font-size: 2.5em;
+    color: white;
 }
 
 .testimonials .content-box{
@@ -325,20 +308,9 @@ section{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
-    color: black;
+    margin-bottom: 50px 0px;
 }
 
-.contact .title h2{
-    font-size: 2em;
-}
-.contact .title p{
-    font-size: 1.3em;
-}
-.contact .title span{
-    color: #D23B3A;
-    font-size: 2.5em;
-}
 
 .contact-form{
     padding: 75px 50px;
