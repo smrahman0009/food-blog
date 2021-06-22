@@ -7,6 +7,8 @@
 body{
     min-height: 1000px;
 }
+
+
 .banner{
     position: relative;
     background-image: url("./img/bg.jpg");
@@ -111,19 +113,7 @@ body{
 section{
     padding: 100px;
 }
-
-.about .row{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about .row .col-150{
-    width: 48%;
-}
-/* ----------------------__ABOUT__US__----------- */
-
+/* ----------__COMMON_TITLE__---------- */
 .title h2{
     color: #111;
     font-size: 2.2em;
@@ -136,13 +126,50 @@ section{
     font-size: 2em;
 }
 
+.title p{
+    font-size: 1.6em;
+}
+/* ------------__END_OF_COMMON_TITLE__------------- */
+
+/* ------------__COMMON_CONTENT__------------------ */
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content .content-box{
+    width: 300px;
+    border: 1px solid rgb(17 17 17 / 11%);
+    margin: 20px;
+    box-shadow: 4px 4px 13px 2px grey;
+}
+.content .content-box img{
+    width: 100%;
+    padding: 10px 10px 5px 10px;
+}
+
+.content .content-box p{
+    padding: 0px 0px 10px 10px;
+    font-weight: 900;
+}
+/* ------------__ENS_OF_COMMON_CONTENT__---------- */
+/* ----------------------__ABOUT__US__----------- */
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about .row .col-150{
+    width: 48%;
+}
+
+
 .about-p{
     font-size: 1.2em !important;
 }
 
-.title p{
-    font-size: 1.6em;
-}
 
 .row .col-150 .img-box{
    position: relative;
@@ -162,7 +189,7 @@ section{
 
 /* -----------------------------__END__ABOUT__US__-------------- */
 
-
+/* ------------------------------__MENU__----------------------- */
 .menu .title{
     display: flex;
     flex-wrap: wrap;
@@ -176,30 +203,8 @@ section{
 .menu .title {
     margin: 50px 0px;
 }
-
-.menu .content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu .content .content-box{
-    width: 300px;
-    background-color: pink;
-    border: 1px solid rgba(17, 17, 17, 0.466);
-    margin: 20px;
-}
-
-.menu .content .content-box img{
-    width: 100%;
-    padding: 10px 10px 5px 10px;
-}
-
-.menu .content .content-box p{
-    padding: 0px 0px 10px 10px;
-    font-weight: 900;
-}
+/* ----------------------------__END_OF_MENU__-------------------------- */
+/* ----------------------------__KITCHEN__------------------------------ */
 
 .kitchen{
     display: flex;
@@ -217,30 +222,8 @@ section{
     text-align: center;
     margin: 50px 0px;
 }
-
-
-.kitchen .content-box{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.kitchen .content-box .box{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 20px 10px;
-}
-
-.kitchen .content-box .box img{
-    width: 250px;
-}
-.kitchen .content-box .box p{
-    margin-top: 10px;
-    font-size: 1.3em;
-}
-
+/* ------------------------__END_OF_KITCHEN__----------------------- */
+/* ------------------------__TESTIMONIALS__------------------------ */
 .testimonials{
     display: flex;
     flex-wrap: wrap;
@@ -264,38 +247,29 @@ section{
 .testimonials .title h2{
     color: white;
 }
-
-.testimonials .content-box{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+.testimonials .content .content-box{
+    background: white;
+    color: #00000096;
+    box-shadow: none;
 }
-
-.testimonials .content-box .box{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    width: 250px;
-    height: 300px;
-    margin: 10px;
+.testimonials .content .content-box p{
+    display: block;
+    padding: 0px 20px;
+    text-align: center;
+    font-style: italic;
 }
-.testimonials .content-box .box p{
-    padding: 0px 10px;
-}
-.testimonials .content-box .box img{
-    width: 80px;
-    height: 80px;
+.testimonials .content .content-box img{
+    display: block;
+    margin: 10px auto;
     border-radius: 50%;
-    margin: 20px auto;
+    width: 150px;
 }
-
-.testimonials .content-box .box .name{
+.testimonials .content .content-box .name{
     text-align: center;
     color: #D23B3A;
+    margin: 10px;
 }
+/* --------------------__END_OF_TESTMONIALS__------------ */
 /* --------------------CONTACT-------------------- */
 .contact{
     background: url("./img/bg3.jpg");
