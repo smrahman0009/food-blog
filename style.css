@@ -69,6 +69,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px;
+    transition: 0.5s ease-in-out;
 }
 .header.sticky{
     background: white;
@@ -121,12 +122,13 @@ section{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 50px 0px;
+    margin: 40px 0px;
 }
 .title h2{
     color: #111;
     font-size: 2.2em;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .title span{
@@ -331,6 +333,10 @@ section{
     color: #333;
 }
 
+.copyright p br {
+    display: none;
+}
+
 .copyright a{
     color: #D23B3A;
     font-weight: 500;
@@ -355,7 +361,7 @@ section{
         width: 100%;
         height: calc(100% - 68px);
         position: fixed;
-        top: 68px;
+        top: 60px;
         left: 0px;
         display: flex;
         justify-content: center;
@@ -413,7 +419,45 @@ section{
 }
 
 @media(max-width:400px){
+    .banner .content h1 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    .banner .content p {
+        font-size: 1.2em;
+    }
+    .banner .content a {
+        margin-top: 80px;
+    }
+
+    .title h2 {
+        color: #111;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-bottom: 1px;
+    }
+    .title p {
+        margin-top: 10px;
+        font-size: 1.1em;
+    }
+    .about-p {
+        font-size: 1.1em !important;
+    }
+    
     .content-box{
         width: 270px !important;
+    }
+
+    .copyright p br {
+        display: initial;
+    }
+
+    .contact-form {
+        padding: 5px 10px;
+        margin-top: 0px !important;
+    }
+
+    .copyright{
+        margin: 10px;
     }
 }
