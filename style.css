@@ -77,15 +77,17 @@ body{
     transition: 0.5s ease-in-out;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
-.header.sticky .logo{
+.header.sticky .logo a{
     color:  #111;
 }
-.header .logo{
+.header .logo a{
     color: white;
     font-size: 2em;
+    text-decoration: none;
 }
 .header .logo span{
     color:  rgb(209, 25, 56);
+    font-size: 3em;
 }
 .header .navigation{
     list-style-type: none;
