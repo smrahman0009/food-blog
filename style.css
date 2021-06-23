@@ -18,7 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 10px;
 }
 
@@ -30,7 +30,7 @@ body{
     align-items: center;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 80px;
 }
 
 .banner .content h1{
@@ -49,7 +49,8 @@ body{
     background-color: rgb(209, 25, 56);
     padding: 10px 30px;
     transition: .5s;
-    margin-top: 100px;
+    margin-top: 140px;
+    margin-bottom: 70px;
 }
 
 .banner .content a:hover{
@@ -114,6 +115,14 @@ section{
     padding: 100px;
 }
 /* ----------__COMMON_TITLE__---------- */
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0px;
+}
 .title h2{
     color: #111;
     font-size: 2.2em;
@@ -165,6 +174,9 @@ section{
     width: 48%;
 }
 
+.about .row .col-150 .title{
+    text-align: left;
+}
 
 .about-p{
     font-size: 1.2em !important;
@@ -191,18 +203,9 @@ section{
 
 /* ------------------------------__MENU__----------------------- */
 .menu .title{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-
-.menu .title {
-    margin: 50px 0px;
-}
 /* ----------------------------__END_OF_MENU__-------------------------- */
 /* ----------------------------__KITCHEN__------------------------------ */
 
@@ -214,13 +217,8 @@ section{
     justify-content: center;
 }
 
-.kitchen .title{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 50px 0px;
+.kitchen .content .content-box{
+    box-shadow: none;
 }
 /* ------------------------__END_OF_KITCHEN__----------------------- */
 /* ------------------------__TESTIMONIALS__------------------------ */
@@ -235,13 +233,8 @@ section{
 }
 
 .testimonials .title{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 50px 0px;
     color: white;
+    margin-top: 20px;
 }
 
 .testimonials .title h2{
@@ -251,10 +244,11 @@ section{
     background: white;
     color: #00000096;
     box-shadow: none;
+    height: 350px;
 }
 .testimonials .content .content-box p{
     display: block;
-    padding: 0px 20px;
+    padding: 0px 35px;
     text-align: center;
     font-style: italic;
 }
@@ -267,7 +261,7 @@ section{
 .testimonials .content .content-box .name{
     text-align: center;
     color: #D23B3A;
-    margin: 10px;
+    margin-top: 20px;
 }
 /* --------------------__END_OF_TESTMONIALS__------------ */
 /* --------------------CONTACT-------------------- */
@@ -277,12 +271,8 @@ section{
 }
 
 .contact .title{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    margin-bottom: 50px 0px;
+  
 }
 
 
@@ -331,7 +321,27 @@ section{
     cursor: pointer;
 }
 
+.copyright{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.copyright p{
+    color: #333;
+}
+
+.copyright a{
+    color: #D23B3A;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
 @media(max-width:991px){
+    section{
+        padding: 40px 10px;
+    }
     .header,
     .header.sticky
     {
@@ -380,20 +390,30 @@ section{
     .header.sticky .menu-toggle{
         filter: invert(1);
     }
+
+    /* ---------__BANNER__------------ */
+    .banner .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 0px;
+    }
+
+    /* ----------__ABOUT__------------ */
+    .about .row {
+        flex-direction: column;
+    }
+    .about .row .col-150 {
+        width: 100%;
+    }
 }
 
-.copyright{
-    padding: 8px 40px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.copyright p{
-    color: #333;
-}
-
-.copyright a{
-    color: #D23B3A;
-    font-weight: 500;
-    text-decoration: none;
+@media(max-width:400px){
+    .content-box{
+        width: 270px !important;
+    }
 }
